@@ -1,5 +1,3 @@
-require 'pry'
-
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -23,7 +21,6 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   song_name_or_number = gets.strip
-  # binding.pry
   if songs.include? song_name_or_number
     puts "Playing #{song_name_or_number}"
   elsif song_name_or_number.to_i <= songs.length && song_name_or_number.to_i >= 1
