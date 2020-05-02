@@ -33,11 +33,12 @@ def play(songs)
 end
 
 def list(songs)
-  counter = 0
-  while counter < songs.length do
-    puts "#{counter + 1}. #{songs[counter]}"
-    counter += 1
-  end
+  # counter = 0
+  # while counter < songs.length do
+  #   puts "#{counter + 1}. #{songs[counter]}"
+  #   counter += 1
+  # end
+  songs.each_with_index { |song, index| puts "#{index + 1}. #{song}" }
 end
 
 def exit_jukebox
