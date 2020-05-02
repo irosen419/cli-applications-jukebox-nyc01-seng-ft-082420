@@ -27,7 +27,7 @@ def play(songs)
     puts "Playing #{song_name_or_number}"
   # elsif songs[song_name_or_number.to_i] == '1' || songs[song_name_or_number.to_i] == '2' || songs[song_name_or_number.to_i] == '3' || songs[song_name_or_number.to_i] == '4' || songs[song_name_or_number.to_i] == '5' || songs[song_name_or_number.to_i] == '6' || songs[song_name_or_number.to_i] == '7' ||
     # puts "Playing #{songs[song_name_or_number.to_i - 1]}"
-  elsif song_name_or_number.to_i 
+  elsif song_name_or_number.to_i <= songs.length
     puts "Playing #{songs[song_name_or_number.to_i - 1]}"
   else
     puts "Invalid input, please try again"
