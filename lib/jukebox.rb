@@ -32,7 +32,7 @@ def play(songs)
   end
 end
 
-def list
+def list(songs)
   counter = 0
   while counter < songs.length do
     binding.pry
