@@ -25,9 +25,8 @@ def play(songs)
   song_name_or_number = gets.strip
   if songs.include? song_name_or_number
     puts "Playing #{song_name_or_number}"
-  elsif songs[song_name_or_number.to_i] == '1' '2' || '3' || '4' || '5' || '6' || '7' || '8' || '9'
+  elsif songs[song_name_or_number.to_i] == '1' || songs[song_name_or_number.to_i] == '2' || songs[song_name_or_number.to_i] == '3' || songs[song_name_or_number.to_i] == '4' || 
     puts "Playing #{songs[song_name_or_number.to_i - 1]}"
-    elsif songs[song_name_or_number.to_i] == '2'
   else
     puts "Invalid input, please try again"
   end
