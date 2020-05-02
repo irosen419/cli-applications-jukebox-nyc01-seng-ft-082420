@@ -1,3 +1,5 @@
+require 'pry'
+
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -33,6 +35,7 @@ end
 def list
   counter = 0
   while counter < songs.length do
+    binding.pry
     puts "#{counter + 1}. #{songs[counter]}"
     counter += 1
   end
